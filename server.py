@@ -13,7 +13,7 @@ clients = {}
 delimiter = '<END>'
 # Encoding Standard
 es = 'UTF-8'
-hostname = 'localhost'
+hostname = '0.0.0.0'
 # Seperator used in parsing client requests
 seperator = '::'
 # shared folder environment variable
@@ -286,4 +286,5 @@ if __name__ == '__main__':
         launch_server(port)
     except ValueError:
         print('USAGE: [port] must be an integer')
+
         sys.exit(1)
